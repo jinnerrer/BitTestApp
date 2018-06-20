@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Bit Test App</string>
+    <string name="map">Карта</string>
+    <string name="items_list">Список</string>
+    <string name="dummy_car">Toyota</string>
+    <string name="dummy_user_name">John</string>
+
+    <string name="list_title">Список</string>
+    <string name="map_title">Карта</string>
+    <string name="location_permission_error">Требуется Геолокация</string>
+    <string name="my_location_point">Мои координаты</string>
+    <string name="add_image">Добавить фото</string>
+    <string name="gallery">Из галереи</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="camera">С камеры</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="facebook_app_id">174002463295062</string>
+    <string name="fb_login_protocol_scheme">fb174002463295062</string>
+    <string name="facebook_log_in">Вход через facebook</string>
+    <string name="skip">Пропустить</string>
+    <string name="email">email</string>
+    <string name="logout">Выйти</string>
+    <string name="service_error_msg">Вы не можете делать запросы к сервисам Google</string>
+    <string name="back_to_exit">Для выхода нажмите назад еще раз</string>
+    <string name="autorization_error">Ошибка авторизации :</string>
+
+
+</resources>
