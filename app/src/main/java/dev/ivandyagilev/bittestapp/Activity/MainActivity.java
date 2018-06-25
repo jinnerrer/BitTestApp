@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
 
         ButterKnife.bind(this);
 
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
         listFragment = new ListFragment();
