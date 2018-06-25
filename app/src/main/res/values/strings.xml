@@ -24,6 +24,11 @@
     <string name="service_error_msg">Вы не можете делать запросы к сервисам Google</string>
     <string name="back_to_exit">Для выхода нажмите назад еще раз</string>
     <string name="autorization_error">Ошибка авторизации :</string>
+    <string name="loading_compleate">Загружено ...</string>
+    <string name="latitude">Широта:</string>
+    <string name="longitude">Долгота:</string>
+    <string name="string_format_to_double">%.2f</string>
+    <string name="coordinate_divider">;</string>
 
 
 </resources>

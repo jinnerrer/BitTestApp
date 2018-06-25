@@ -28,7 +28,6 @@ public final class ResultsList {
     public void clearResults(){
         userList.clear();
         carList.clear();
-
     }
 
     public List<User> getUserList() {
