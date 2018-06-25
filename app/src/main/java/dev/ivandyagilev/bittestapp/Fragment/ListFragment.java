@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.vansuita.pickimage.bundle.PickSetup;
@@ -22,6 +24,7 @@ import com.vansuita.pickimage.listeners.IPickClick;
 
 import java.io.File;
 import java.util.Date;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -65,7 +68,7 @@ public class ListFragment extends Fragment implements ListFragmentInterface{
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_list, container, false);
@@ -105,12 +108,12 @@ public class ListFragment extends Fragment implements ListFragmentInterface{
 
     @Override
     public void startLoading() {
-
+        //При больших коллекциях показать загрузку
     }
 
     @Override
     public void stopLoading() {
-
+        Toast.makeText(getContext(), R.string.loading_compleate, Toast.LENGTH_SHORT).show();
     }
 
     private void addImage() {
@@ -145,7 +148,7 @@ public class ListFragment extends Fragment implements ListFragmentInterface{
                     }
                 });
 
-        dialog.show(getActivity());
+        dialog.show(Objects.requireNonNull(getActivity()));
     }
 
     @Override
